@@ -1,11 +1,11 @@
 AFRAME.registerComponent('friends', {
-    schema: {},
+    // schema: {},
 
     init: function () {
         this.el.addEventListener(
             'click',
             () => {
-                this.setAttribute('color', '#FF0000');
+                this.el.setAttribute('color', '#FF0000');
             },
             false
         );
@@ -13,7 +13,7 @@ AFRAME.registerComponent('friends', {
         this.el.addEventListener(
             'raycaster-intersected',
             () => {
-                this.setAttribute('color', '#0000FF');
+                this.el.setAttribute('color', '#0000FF');
             },
             false
         );
@@ -21,7 +21,7 @@ AFRAME.registerComponent('friends', {
         this.el.addEventListener(
             'raycaster-intersected-cleared',
             () => {
-                this.setAttribute('color', '#FFFFFF');
+                this.el.setAttribute('color', '#FFFFFF');
             },
             false
         );
