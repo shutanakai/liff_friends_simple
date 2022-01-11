@@ -5,7 +5,7 @@ AFRAME.registerComponent('friends', {
         this.el.addEventListener(
             'click',
             () => {
-                this.el.setAttribute('color', '#FF0000');
+                location.href = './list.html';
             },
             false
         );

@@ -13,8 +13,8 @@
                 <a-asset-item id="apple" src="./models/apple.glb"></a-asset-item>
             </a-assets>
             <a-marker preset="hiro">
-                <a-entity gltf-model="#apple" animation-mixer></a-entity>
-                <!-- <a-box position="0 0.5 0" class="clickable" friends></a-box> -->
+                <!-- <a-entity gltf-model="#apple" animation-mixer></a-entity> -->
+                <a-box position="0 0.5 0" class="clickable" friends></a-box>
             </a-marker>
             <a-entity camera>
                 <a-entity cursor="fuse: false;" raycaster="objects: .clickable" position="0 0 -1" geometry="primitive: circle; radius: 0.05" material="src: #scope; roughness: 0; shader: flat; transparent: true"> </a-entity>
