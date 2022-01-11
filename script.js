@@ -5,7 +5,7 @@ AFRAME.registerComponent('friends', {
         this.el.addEventListener(
             'click',
             () => {
-                location.href = './list.html';
+                location.href = './get.html';
             },
             false
         );
