@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+        <script src="https://rawgit.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <a-scene vr-mode-ui="enabled: false;" embedded arjs="debugUIEnabled: false;">
+            <a-assets>
+                <img src="images/scope.png" id="scope" />
+                <a-asset-item id="apple" src="./models/apple.glb"></a-asset-item>
+            </a-assets>
+            <a-marker preset="hiro">
+                <a-entity gltf-model="#apple" animation-mixer></a-entity>
+                <!-- <a-box position="0 0.5 0" class="clickable" friends></a-box> -->
+            </a-marker>
+            <a-entity camera>
+                <a-entity cursor="fuse: false;" raycaster="objects: .clickable" position="0 0 -1" geometry="primitive: circle; radius: 0.05" material="src: #scope; roughness: 0; shader: flat; transparent: true"> </a-entity>
+            </a-entity>
+        </a-scene>
+    </body>
+</html>

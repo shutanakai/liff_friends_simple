@@ -1,22 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
     <head>
-        <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
-        <script src="https://rawgit.com/jeromeetienne/AR.js/master/aframe/build/aframe-ar.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <script src="script.js"></script>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     </head>
     <body>
-        <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" embedded>
-            <a-assets>
-                <img src="images/scope.png" id="scope" />
-            </a-assets>
-            <a-marker preset="hiro">
-                <a-box position="0 0.5 0" class="clickable" friends></a-box>
-            </a-marker>
-            <a-entity camera>
-                <a-entity cursor="fuse: false;" raycaster="objects: .clickable" position="0 0 -1" geometry="primitive: circle; radius: 0.05" material="src: #scope; roughness: 0; shader: flat; transparent: true"> </a-entity>
-            </a-entity>
-        </a-scene>
+        <a href="./ar.html">始める</a>
     </body>
 </html>
